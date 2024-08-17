@@ -5,6 +5,11 @@
 
 int main(int argc, char** argv)
 {
-    FileParser parser(argv[0]);
+    FileParser parser;
+    TuringMachine machine;
+    auto result = parser.parseFile(argv[0]);
 
+    machine.setStates(result);
+
+    machine.run();
 }

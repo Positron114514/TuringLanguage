@@ -11,4 +11,6 @@ add_executable(TuringLanguage src/main.cpp
         include/turingmachine.h
         src/fileparser.cpp
         include/fileparser.h
-        include/basic.h)
+        include/basic.h
+        src/statement.cpp
+        include/statement.h)
