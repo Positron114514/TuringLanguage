@@ -22,6 +22,11 @@ public:
      */
     std::unordered_map<std::string, Statement>* parseFile(std::string filePath);
 
+    /**
+     * get the machine memory of a file.
+     */
+    void getMachineMemory();
+
     ~FileParser();
 
 private:

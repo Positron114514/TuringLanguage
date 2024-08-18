@@ -7,6 +7,7 @@
 
 // 版本
 #define CURRENT_VERSION 1.0
+#define TEST_FILE_PATH "./test.tu"
 
 #include "basic.h"
 #include "turingmachine.h"

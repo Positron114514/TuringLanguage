@@ -5,12 +5,13 @@ set(CMAKE_CXX_STANDARD 17)
 
 include_directories(include)
 
-add_executable(TuringLanguage src/main.cpp
-        include/main.h
-        src/turingmachine.cpp
-        include/turingmachine.h
-        src/fileparser.cpp
-        include/fileparser.h
-        include/basic.h
-        src/statement.cpp
-        include/statement.h)
+add_executable(TuringLanguage main.cpp
+        main.h
+        turingmachine.cpp
+        turingmachine.h
+        fileparser.cpp
+        fileparser.h
+        basic.h
+        statement.cpp
+        statement.h
+        log.cpp)

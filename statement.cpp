@@ -15,3 +15,10 @@ Statement::Statement() {
 
 }
 
+std::string Statement::toString() {
+    std::string retStr;
+    retStr.append("0: ").append(std::string(1, operations[0])).append(states[0]).
+        append("; 1: ").append(std::string(1, operations[1])).append(states[1]);
+    return retStr;
+}
+

@@ -14,6 +14,8 @@ public:
     Statement(char operation0, char operation1, std::string state0, std::string state1);
     Statement();
 
+    std::string toString();
+
     std::string states[2] = {};
     char operations[2] = {};
 };

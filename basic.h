@@ -19,13 +19,14 @@
 #define MACHINE_START_STATEMENT "start"
 
 #ifdef DEBUG_MODE
-#define LOG std::cout
+#define LOG std::cout << "[Turing Language] "
 #else
-#define LOG Log::logFile << "[Turing Language] "
+#define LOG (Log::logFile) << "[Turing Language] "
 #endif
 
 namespace Log{
-    std::fstream logFile("./log.txt", std::ios::out);
+    extern std::fstream logFile;
 }
+
 
 #endif //TURINGLANGUAGE_BASIC_H
